@@ -109,18 +109,21 @@ to run the App:</p>
 <p>Jino is an AI companion. To create replies and maintain conversation memory,
 Ravioli processes the messages, voice notes, call audio, transcripts, profile
 information, and conversation memories you provide. Personal details in this
-content can be included in the data sent to the following services:</p>
+content can be included in the data sent to the following services. The services
+used depend on the feature and our provider settings. Listing a provider does
+not mean that every conversation is sent to that provider:</p>
 <ul>
-  <li><strong>Google Gemini:</strong> receives messages, call transcripts,
+  <li><strong>Google, OpenAI, and Anthropic:</strong> these are possible AI
+      providers. The selected provider receives messages, call transcripts,
       relevant conversation memories, and profile details such as your name,
       date of birth, and gender to generate replies and maintain memory.</li>
   <li><strong>LiveKit:</strong> carries real-time call audio and connects the
-      call to Google Gemini and Deepgram through LiveKit Inference.</li>
+      call to AI and speech services.</li>
   <li><strong>Deepgram:</strong> receives call audio through LiveKit to
       convert speech to text.</li>
   <li><strong>ElevenLabs:</strong> receives voice-note audio to convert it to
       text, and receives reply text to generate speech.</li>
-  <li><strong>LangChain LangSmith:</strong> receives conversation content and
+  <li><strong>LangChain:</strong> receives conversation content and
       technical traces for service diagnostics, error analysis, and quality
       checks.</li>
 </ul>
