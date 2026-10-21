@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">Ravioli &middot; Effective October 3, 2026</p>
+<p class="meta">Ravioli &middot; Effective October 21, 2026</p>
 
 <p>This Privacy Policy explains how Ravi Inc. ("Ravi", "we", "us") handles
 information in connection with the Ravioli mobile application (the "App").
@@ -43,13 +43,15 @@ By using the App, you agree to the practices described here.</p>
   <li><strong>Content you provide.</strong> The messages and other content you
       submit while using the App, so the App can respond and function as
       intended.</li>
-  <li><strong>Voice and audio.</strong> When you start a voice call in the App,
+  <li><strong>Voice and audio.</strong> When you start a voice call or record a voice note in the App,
       we access your microphone and transmit your audio in real time so the
       conversation can happen. That audio is processed to convert speech to
       text and to generate the companion's spoken reply, which also produces a
-      transcript of the call. We access your microphone only during a call that
+      transcript of the call. We access your microphone only during a call or recording that
       you start.</li>
-  <li><strong>Contacts.</strong> If you grant contacts permission, the App uses
+  <li><strong>Contacts.</strong> The current single-companion app does not request
+      contacts access or upload your address book. Earlier versions offered
+      optional friend matching. If you used that feature, the App used
       your device address book to find which of your contacts already use
       Ravioli, so you can start a chat with them. Ravioli is designed to work
       the same wherever you sign in &mdash; the same chats and the same people,
@@ -72,10 +74,9 @@ By using the App, you agree to the practices described here.</p>
 <p>The App asks for a device permission only when a feature needs it, and you
 may decline or later revoke any of them in your device settings:</p>
 <ul>
-  <li><strong>Microphone</strong> &mdash; to carry your side of a voice call.
-      Used only while a call you started is active.</li>
-  <li><strong>Contacts</strong> &mdash; to find which of your contacts already
-      use Ravioli so you can start a chat with them.</li>
+  <li><strong>Microphone</strong> &mdash; for a voice call or voice note that you start.</li>
+  <li><strong>Contacts</strong> &mdash; used by the optional friend-matching
+      feature in earlier versions. The current app does not request this permission.</li>
   <li><strong>Notifications</strong> &mdash; to deliver new messages and
       reminders.</li>
 </ul>
@@ -104,24 +105,42 @@ to run the App:</p>
       or asset sale, subject to this Policy.</li>
 </ul>
 
-<h2>AI Features</h2>
-<p>Ravioli's companion replies, voice conversations, and related features are
-generated using artificial-intelligence models. Your chats, and during a call
-your voice, are processed by AI service providers. To produce a response, we
-send the relevant parts of your conversation &mdash; the messages you write,
-and during a call the audio you speak and its transcript &mdash; to those
-providers on your behalf.</p>
-<p>These providers act as our processors: they handle this information to
-return a response to us, under their terms for business and developer use, and
-not to build a profile of you or to advertise to you. We do not sell your
-information, and we do not share your conversations with anyone else for
-advertising or any unrelated purpose.</p>
-<p>We do not send your address book to these AI providers. Contact phone
-numbers are used only for the friend-matching described above.</p>
-<p>If we change the providers we rely on, we will update this Policy. Because
-these features are how the App works, they cannot be used with the AI
-processing switched off; you can stop it at any time by no longer sending
-messages or making calls, or by deleting your account.</p>
+<h2>AI Features and Service Providers</h2>
+<p>Jino is an AI companion. To create replies and maintain conversation memory,
+Ravioli processes the messages, voice notes, call audio, transcripts, profile
+information, and conversation memories you provide. Personal details in this
+content can be included in the data sent to the following services:</p>
+<ul>
+  <li><strong>Google Gemini:</strong> receives messages, call transcripts,
+      relevant conversation memories, and profile details such as your name,
+      date of birth, and gender to generate replies and maintain memory.</li>
+  <li><strong>LiveKit:</strong> carries real-time call audio and connects the
+      call to Google Gemini and Deepgram through LiveKit Inference.</li>
+  <li><strong>Deepgram:</strong> receives call audio through LiveKit to
+      convert speech to text.</li>
+  <li><strong>ElevenLabs:</strong> receives voice-note audio to convert it to
+      text, and receives reply text to generate speech.</li>
+  <li><strong>LangChain LangSmith:</strong> receives conversation content and
+      technical traces for service diagnostics, error analysis, and quality
+      checks.</li>
+</ul>
+<p>These services process data to provide the functions described above. We
+require service providers to protect shared data to the same standard described
+in this policy and to use it only to provide services to us. We do not sell
+conversation content or share it for advertising. We do not send your address
+book to these AI services.</p>
+<p>The current app shows these recipients, data types, and purposes before
+asking you to select <strong>Allow and continue</strong>. Selecting
+<strong>Not now</strong> signs you out without starting a conversation. The
+app requires this choice for both new and returning accounts before it enables
+chat and calls. The choice is stored for your account on your device and is
+cleared when you sign out. A change to the disclosed recipients or uses requires
+a new choice.</p>
+<p>You can stop sending new conversation data by ending a call, stopping a
+recording, and no longer sending messages. You can sign out in Settings or use
+<strong>Delete account</strong> in Settings to request deletion of your account
+and associated data. The AI features cannot operate without the processing
+specified above. We update this policy when the services or uses change.</p>
 
 <h2>Data Retention</h2>
 <p>We retain information for as long as it is needed to provide the App. When you
